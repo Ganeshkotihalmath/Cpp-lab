@@ -7,7 +7,6 @@ class Matrix
     int m, n;
 
 public:
-    // Constructor
     Matrix(int rows, int cols)
     {
         m = rows;
@@ -36,7 +35,6 @@ public:
         }
     }
 
-    // Input
     void input()
     {
         for (int i = 0; i < m; i++)
@@ -44,7 +42,6 @@ public:
                 cin >> a[i][j];
     }
 
-    // Display
     void display()
     {
         for (int i = 0; i < m; i++)
@@ -56,7 +53,6 @@ public:
         }
     }
 
-    // Destructor
     ~Matrix()
     {
         for (int i = 0; i < m; i++)

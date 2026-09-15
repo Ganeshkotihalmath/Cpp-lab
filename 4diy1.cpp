@@ -18,7 +18,6 @@ public:
             a[i] = new int[n];
     }
 
-    // Deep Copy Constructor
     Matrix(const Matrix &x)
     {
         m = x.m;

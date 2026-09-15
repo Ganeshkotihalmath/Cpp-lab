@@ -71,7 +71,7 @@ int main()
     cout << "Original Matrix:\n";
     A.display();
 
-    Matrix B = A;   // Deep copy
+    Matrix B = A;  
 
     cout << "Copied Matrix:\n";
     B.display();

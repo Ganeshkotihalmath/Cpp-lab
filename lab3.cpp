@@ -5,9 +5,9 @@
  int main() {
 
  string s = "verification";
- cout << "First 4 : " << s.substr(0, 4) << endl; // substr(pos,len)
- cout << "From 4 : " << s.substr(4) << endl; // to end
- int c = s.compare("verify"); // <0,0,>0 like strcmp
+ cout << "First 4 : " << s.substr(0, 4) << endl; 
+ cout << "From 4 : " << s.substr(4) << endl;
+ int c = s.compare("verify"); 
  cout << "compare vs ’verify’: " << (c < 0 ? "<" : c > 0 ? ">" : "=") << endl;
  int freq[26] = {0};
  for (char ch : s) if (isalpha((unsigned char)ch)) freq[tolower(ch) - 'a']++;

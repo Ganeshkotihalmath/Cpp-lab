@@ -9,16 +9,15 @@ cin >> s;
 
 cout << "Length: " << s.length() << endl;
 cout << "Upper: ";
-for (char c : s) cout << (char)toupper(c); // range-based for
-cout << endl;
+for (char c : s) cout << (char)toupper(c); 
 
- // Palindrome check using two indices
+
 bool pal = true;
 for (size_t i = 0, j = s.size() - 1; i < j; ++i, --j)
 if (s[i] != s[j]) { pal = false; break; }
 cout << s << (pal ? " IS" : " is NOT") << " a palindrome\n";
 
- // Find a substring
+
 size_t pos = s.find("an");
 if (pos != string::npos) cout << "’an’ found at index " << pos << endl;
 else cout << "’an’ not found\n";
